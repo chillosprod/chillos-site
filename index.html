@@ -1,0 +1,347 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#111a46" name="theme-color"/>
+<meta content="ChillOS Python Core — an open, experimental virtual operating environment built with Python." name="description"/>
+<meta content="ChillOS Python Core" property="og:title"/>
+<meta content="Build, break and restore a virtual operating environment written in Python." property="og:description"/>
+<meta content="website" property="og:type"/>
+<title>ChillOS Python Core</title>
+<link href="assets/icons/favicon.svg" rel="icon" type="image/svg+xml"/><link href="assets/css/site.css" rel="stylesheet"/>
+<script>document.documentElement.classList.replace('no-js','js');</script>
+</head>
+<body data-page="index">
+<div class="region-warning" hidden="" id="ruAccessWarning">
+<div class="region-warning__inner">
+<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M12 3 2 21h20L12 3Zm0 5.4 1 7.2h-2l1-7.2ZM12 19a1.25 1.25 0 1 1 0-2.5A1.25 1.25 0 0 1 12 19Z"></path></svg>
+<div>
+<strong data-i18n="geo.ru.title">Possible access restrictions</strong>
+<span data-i18n="geo.ru.text">In Russia, the site may be restricted by Roskomnadzor — “Roskompozor”, as the project author calls it.</span>
+</div>
+<button aria-label="Dismiss warning" class="icon-button" data-dismiss="ru-warning" data-i18n-aria-label="common.dismiss" type="button">×</button>
+</div>
+</div>
+<header class="site-header" id="top">
+<div class="shell site-header__inner">
+<a aria-label="ChillOS home" class="brand notranslate" href="index.html">
+<span aria-hidden="true" class="brand__mark"><small>CHILL</small><strong>OS</strong></span>
+<span class="brand__name">ChillOS</span>
+</a>
+<button aria-controls="primaryNav" aria-expanded="false" class="mobile-menu-button" type="button">
+<span></span><span></span><span></span><span class="sr-only" data-i18n="common.menu">Menu</span>
+</button>
+<nav aria-label="Primary navigation" class="primary-nav" id="primaryNav">
+<a data-i18n="nav.about" href="#about">About</a>
+<a data-i18n="nav.features" href="#features">Features</a>
+<a data-i18n="nav.requirements" href="#requirements">Requirements</a>
+<a data-i18n="nav.developers" href="developers.html">Developers</a>
+<a data-i18n="nav.terms" href="terms.html">Terms</a>
+</nav>
+<div class="header-actions">
+<div class="language-picker" data-language-picker="">
+<button aria-expanded="false" aria-haspopup="listbox" class="language-picker__button" type="button">
+<span aria-hidden="true" class="language-flag flag--en" data-current-flag=""></span>
+<span data-current-language="">English</span>
+<svg aria-hidden="true" viewbox="0 0 20 20"><path d="m5 7 5 5 5-5"></path></svg>
+</button>
+<div class="language-picker__menu" hidden="" role="listbox">
+<button data-locale="en" role="option" type="button"><span class="language-flag flag--en"></span>English</button>
+<button data-locale="uk" role="option" type="button"><span class="language-flag flag--uk"></span>Українська</button>
+<button data-locale="ru" role="option" type="button"><span class="language-flag flag--ru"></span>Русский</button>
+<button data-locale="be" role="option" type="button"><span class="language-flag flag--be"></span>Беларуская</button>
+<button data-locale="kk" role="option" type="button"><span class="language-flag flag--kk"></span>Қазақша</button>
+</div>
+</div>
+<a class="button button--light button--compact github-button" href="https://github.com/chillosprod/chillos-python-core" rel="noopener noreferrer" target="_blank">
+<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M12 .7a11.5 11.5 0 0 0-3.64 22.4c.58.11.79-.25.79-.56v-2.2c-3.22.7-3.9-1.37-3.9-1.37-.52-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.72 1.27 3.38.97.1-.75.4-1.27.74-1.56-2.57-.29-5.27-1.29-5.27-5.73 0-1.27.45-2.3 1.2-3.12-.12-.3-.52-1.48.11-3.08 0 0 .98-.31 3.16 1.19A11 11 0 0 1 12 6.05c.98 0 1.96.13 2.88.39 2.19-1.5 3.16-1.19 3.16-1.19.63 1.6.23 2.78.11 3.08.75.82 1.2 1.85 1.2 3.12 0 4.45-2.7 5.43-5.28 5.72.42.36.79 1.07.79 2.15v3.2c0 .31.21.68.8.56A11.5 11.5 0 0 0 12 .7Z" fill="currentColor"></path></svg>
+<span data-i18n="nav.github">Open GitHub</span>
+</a>
+</div>
+</div>
+</header>
+<main>
+<section class="hero">
+<div class="shell hero__grid">
+<div class="hero__copy">
+<div class="eyebrow"><span class="status-dot"></span><span data-i18n="hero.eyebrow">Public Beta · Python Core</span></div>
+<h1 data-i18n-html="hero.title">Build it.<br/>Break it.<br/><span>Restore it.</span></h1>
+<p class="hero__lead" data-i18n="hero.lead">ChillOS turns a virtual operating environment into an open creative workspace for exploration, development and recovery experiments.</p>
+<div class="hero__actions">
+<a class="button button--light" href="https://github.com/chillosprod/chillos-python-core" rel="noopener noreferrer" target="_blank">
+<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M12 .7a11.5 11.5 0 0 0-3.64 22.4c.58.11.79-.25.79-.56v-2.2c-3.22.7-3.9-1.37-3.9-1.37-.52-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.72 1.27 3.38.97.1-.75.4-1.27.74-1.56-2.57-.29-5.27-1.29-5.27-5.73 0-1.27.45-2.3 1.2-3.12-.12-.3-.52-1.48.11-3.08 0 0 .98-.31 3.16 1.19A11 11 0 0 1 12 6.05c.98 0 1.96.13 2.88.39 2.19-1.5 3.16-1.19 3.16-1.19.63 1.6.23 2.78.11 3.08.75.82 1.2 1.85 1.2 3.12 0 4.45-2.7 5.43-5.28 5.72.42.36.79 1.07.79 2.15v3.2c0 .31.21.68.8.56A11.5 11.5 0 0 0 12 .7Z" fill="currentColor"></path></svg>
+<span data-i18n="hero.github">Explore the project</span>
+</a>
+<a class="button button--ghost" data-i18n="hero.requirements" href="#requirements">View requirements</a>
+</div>
+<div aria-label="Minimum requirements" class="hero__facts" data-i18n-aria-label="aria.minimumRequirements">
+<span>Python 3.11+</span><span>4 GB RAM</span><span data-i18n="hero.diskFact">2 GB disk</span>
+</div>
+</div>
+<div aria-label="Interactive ChillOS interface simulation" class="hero__demo-wrap" data-i18n-aria-label="aria.systemDemo">
+<div class="system-demo" id="systemDemo">
+<div class="system-demo__topbar">
+<div class="system-demo__brand"><span class="mini-os">OS</span> ChillOS</div>
+<div class="system-demo__menus"><span data-i18n="demo.desktop">Desktop</span><span data-i18n="demo.menu.file">File</span><span data-i18n="demo.menu.edit">Edit</span><span data-i18n="demo.menu.view">View</span></div>
+<div class="system-demo__status"><span aria-hidden="true">◖</span><span id="demoClock">23:31</span></div>
+</div>
+<div class="system-demo__desktop">
+<div aria-hidden="true" class="desktop-shortcuts">
+<div><span class="desktop-icon folder-icon"></span><small data-i18n="demo.documents">Documents</small></div>
+<div><span class="desktop-icon image-icon"></span><small data-i18n="demo.photos">Photos</small></div>
+<div><span class="desktop-icon ruby-icon">R</span><small data-i18n="demo.rubyIde">Ruby IDE</small></div>
+</div>
+<div class="demo-window" data-demo-window="">
+<div class="demo-window__bar">
+<span class="window-dot window-dot--red"></span><span class="window-dot window-dot--yellow"></span><span class="window-dot window-dot--green"></span>
+<strong data-demo-title="" data-i18n="demo.files">Files</strong>
+<span class="demo-window__spacer"></span>
+<button aria-label="Minimize" data-i18n-aria-label="common.minimize" type="button">—</button><button aria-label="Close" data-i18n-aria-label="common.close" type="button">×</button>
+</div>
+<div class="demo-window__body">
+<aside class="demo-window__sidebar">
+<span class="active" data-i18n="demo.home">Home</span>
+<span data-i18n="demo.desktop">Desktop</span>
+<span data-i18n="demo.documents">Documents</span>
+<span data-i18n="demo.downloads">Downloads</span>
+</aside>
+<div class="demo-window__content" data-demo-content="">
+<div class="file-card"><span class="file-card__icon doc"></span><small data-i18n="demo.documents">Documents</small></div>
+<div class="file-card"><span class="file-card__icon photo"></span><small data-i18n="demo.photos">Photos</small></div>
+<div class="file-card"><span class="file-card__icon project">R</span><small data-i18n="demo.project">Project</small></div>
+</div>
+</div>
+</div>
+<div class="demo-chip demo-chip--kernel"><strong>PCHLLKernel</strong><small data-i18n="demo.kernel">kernel is online</small></div>
+<div class="demo-chip demo-chip--dker"><strong>DKER 3.0</strong><small data-i18n="demo.dker">build applications</small></div>
+<div class="demo-tablet" id="geoTablet">
+<div class="demo-tablet__camera"></div>
+<div class="demo-tablet__screen">
+<span class="tablet-label" data-i18n="demo.tabletLabel">Chill Notes</span>
+<strong data-i18n="demo.tabletTitle">Ideas stay close</strong>
+<small data-i18n="demo.tabletText">A compact second workspace for notes and status.</small>
+</div>
+</div>
+<div aria-label="Demo applications" class="demo-dock" data-i18n-aria-label="aria.demoApps" role="toolbar">
+<button aria-label="Files" class="active" data-demo-app="files" data-i18n-aria-label="demo.files" type="button"><span class="dock-icon dock-icon--files"></span></button>
+<button aria-label="Browser" data-demo-app="browser" data-i18n-aria-label="demo.browser" type="button"><span class="dock-icon dock-icon--browser"></span></button>
+<button aria-label="Settings" data-demo-app="settings" data-i18n-aria-label="demo.settings" type="button"><span class="dock-icon dock-icon--settings"></span></button>
+<button aria-label="Ruby IDE" data-demo-app="ruby" data-i18n-aria-label="demo.rubyIde" type="button"><span class="dock-icon dock-icon--ruby">R</span></button>
+<button aria-label="Terminal" data-demo-app="terminal" data-i18n-aria-label="demo.terminal" type="button"><span class="dock-icon dock-icon--terminal">›_</span></button>
+</div>
+</div>
+</div>
+<p class="demo-caption" data-i18n="demo.caption">This is live HTML, CSS and JavaScript — not a generated image. Try the dock.</p>
+</div>
+</div>
+</section>
+<aside class="ua-support" hidden="" id="uaSupportWidget">
+<button aria-label="Close" class="ua-support__close" data-dismiss="ua-support" data-i18n-aria-label="common.close" type="button">×</button>
+<span aria-hidden="true" class="ua-support__flag"></span>
+<div>
+<strong data-i18n="geo.ua.widgetTitle">Support Ukraine</strong>
+<p data-i18n="geo.ua.widgetText">A verified way to support Ukraine’s defenders through the Come Back Alive Foundation.</p>
+<a data-i18n="geo.ua.widgetAction" href="https://savelife.in.ua/en/donate-en/" rel="noopener noreferrer" target="_blank">Open the official donation page</a>
+</div>
+</aside>
+<section class="section section--light" id="about">
+<div class="shell">
+<div class="section-heading">
+<span class="kicker" data-i18n="about.kicker">A system that belongs to the curious</span>
+<h2 data-i18n="about.title">An operating environment designed to be understood.</h2>
+<p data-i18n="about.lead">ChillOS is not trying to hide its moving parts. It gives developers and explorers a visual place to test ideas, inspect behavior and recover from mistakes.</p>
+</div>
+<div class="value-grid">
+<article class="value-card">
+<span class="value-card__number">01</span>
+<h3 data-i18n="about.openTitle">Open by default</h3>
+<p data-i18n="about.openText">The project lives on GitHub and is distributed under Apache License 2.0, with additional product terms.</p>
+</article>
+<article class="value-card">
+<span class="value-card__number">02</span>
+<h3 data-i18n="about.localTitle">Local-first</h3>
+<p data-i18n="about.localText">Profiles, language preferences and virtual files are intended to stay on the user’s device.</p>
+</article>
+<article class="value-card">
+<span class="value-card__number">03</span>
+<h3 data-i18n="about.recoveryTitle">Recovery is a feature</h3>
+<p data-i18n="about.recoveryText">The Recovery Environment and isolated disk model make experiments less intimidating.</p>
+</article>
+</div>
+</div>
+</section>
+<section class="section section--dark" id="features">
+<div class="shell">
+<div class="section-heading section-heading--center">
+<span class="kicker" data-i18n="features.kicker">Core capabilities</span>
+<h2 data-i18n="features.title">A small system with deliberately visible layers.</h2>
+</div>
+<div class="feature-stack">
+<article class="feature-panel feature-panel--wide">
+<div class="feature-panel__copy">
+<span class="feature-tag">INMORE Windows</span>
+<h3 data-i18n="features.shellTitle">A desktop shell that feels coherent.</h3>
+<p data-i18n="features.shellText">Windows, the dock, desktop shortcuts, settings and built-in applications share one visual language and one global locale.</p>
+</div>
+<div aria-hidden="true" class="mini-window-stack">
+<div class="mini-window mini-window--back"></div>
+<div class="mini-window mini-window--front"><span></span><span></span><span></span></div>
+</div>
+</article>
+<div class="feature-grid">
+<article class="feature-panel">
+<div aria-hidden="true" class="feature-icon feature-icon--kernel">K</div>
+<span class="feature-tag">PCHLLKernel</span>
+<h3 data-i18n="features.kernelTitle">A visible kernel layer.</h3>
+<p data-i18n="features.kernelText">System state, boot flow and host integration are represented as parts of the environment instead of hidden magic.</p>
+</article>
+<article class="feature-panel">
+<div aria-hidden="true" class="feature-icon feature-icon--recovery">↻</div>
+<span class="feature-tag" data-i18n="features.recoveryTag">Recovery</span>
+<h3 data-i18n="features.recoveryTitle">Break things without losing the plot.</h3>
+<p data-i18n="features.recoveryText">Startup repair, recovery tools and an isolated virtual disk provide a clear route back.</p>
+</article>
+</div>
+<article class="feature-panel feature-panel--code">
+<div class="feature-panel__copy">
+<span class="feature-tag">DKER 3.0</span>
+<h3 data-i18n="features.dkerTitle">A framework for native-feeling ChillOS apps.</h3>
+<p data-i18n="features.dkerText">Build interfaces, register modules and work with system libraries while respecting the project’s framework and branding rules.</p>
+<a class="text-link" data-i18n="features.dkerLink" href="developers.html">Read the developer rules</a>
+</div>
+<pre aria-label="DKER 3.0 example" class="code-card notranslate" data-i18n-aria-label="aria.dkerExample"><code><span class="code-muted">from</span> dker <span class="code-muted">import</span> App, Window
+
+app = App(<span class="code-string" data-i18n="demo.codeHello">"Hello ChillOS"</span>)
+window = Window(size=(720, 460))
+window.mount(app)
+<span hidden="" id="uaDonateCode">
+<span class="code-comment" data-i18n="code.ua.comment"># Ukraine region: support a trusted initiative</span>
+app.link(<span class="code-string">"Повернись живим"</span>, <span class="code-string">"https://savelife.in.ua"</span>)</span>
+app.run()</code></pre>
+</article>
+<article class="feature-panel feature-panel--github">
+<div>
+<span class="feature-tag" data-i18n="features.sourceTag">Source of truth</span>
+<h3 data-i18n="features.githubTitle">No fake web demo. Inspect the real project.</h3>
+<p data-i18n="features.githubText">The old interface trial has been removed. Releases, source code and project history belong on GitHub.</p>
+</div>
+<a class="button button--light" href="https://github.com/chillosprod/chillos-python-core" rel="noopener noreferrer" target="_blank">
+<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M12 .7a11.5 11.5 0 0 0-3.64 22.4c.58.11.79-.25.79-.56v-2.2c-3.22.7-3.9-1.37-3.9-1.37-.52-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.72 1.27 3.38.97.1-.75.4-1.27.74-1.56-2.57-.29-5.27-1.29-5.27-5.73 0-1.27.45-2.3 1.2-3.12-.12-.3-.52-1.48.11-3.08 0 0 .98-.31 3.16 1.19A11 11 0 0 1 12 6.05c.98 0 1.96.13 2.88.39 2.19-1.5 3.16-1.19 3.16-1.19.63 1.6.23 2.78.11 3.08.75.82 1.2 1.85 1.2 3.12 0 4.45-2.7 5.43-5.28 5.72.42.36.79 1.07.79 2.15v3.2c0 .31.21.68.8.56A11.5 11.5 0 0 0 12 .7Z" fill="currentColor"></path></svg>
+<span data-i18n="nav.github">Open GitHub</span>
+</a>
+</article>
+</div>
+</div>
+</section>
+<section class="section section--requirements" id="requirements">
+<div class="shell requirements-layout">
+<div class="section-heading">
+<span class="kicker" data-i18n="requirements.kicker">Before installation</span>
+<h2 data-i18n="requirements.title">Know what the environment expects.</h2>
+<p data-i18n="requirements.lead">Minimum hardware is enough to launch ChillOS, while the recommended setup keeps multimedia and complex pages smoother.</p>
+<a class="text-link" data-i18n="requirements.termsLink" href="terms.html">Read the full Terms of Use</a>
+</div>
+<div class="requirements-card">
+<div class="requirements-card__head">
+<span data-i18n="requirements.item">Component</span><span data-i18n="requirements.minimum">Minimum</span><span data-i18n="requirements.recommended">Recommended</span>
+</div>
+<div><strong data-i18n="requirements.python">Runtime</strong><span>Python 3.11+</span><span data-i18n="requirements.pythonRec">Current stable Python</span></div>
+<div><strong data-i18n="requirements.ram">Memory</strong><span>4 GB RAM</span><span>8 GB RAM</span></div>
+<div><strong data-i18n="requirements.disk">Storage</strong><span>2 GB</span><span data-i18n="requirements.diskRec">SSD · 4+ GB free</span></div>
+<div><strong data-i18n="requirements.display">Display</strong><span>1366 × 768</span><span>Full HD</span></div>
+</div>
+</div>
+</section>
+<section class="section section--news" id="news">
+<div class="shell news-layout">
+<div class="section-heading">
+<span class="kicker" data-i18n="news.kicker">Project news</span>
+<h2 data-i18n="news.title">The website now lives with the project’s lead creator.</h2>
+<p data-i18n="news.text">The official ChillOS website is now fully maintained on the domain of its lead creator, Alexander Tihomirov. The source project remains public on GitHub.</p>
+</div>
+<article class="contact-card">
+<span class="contact-card__label" data-i18n="news.contact">Direct contact</span>
+<h3 data-i18n="news.creator">Alexander Tihomirov · Lead developer</h3>
+<a href="https://t.me/feelourlife" rel="noopener noreferrer" target="_blank"><span data-i18n="common.telegram">Telegram</span><strong>@feelourlife</strong></a>
+<a href="mailto:tihomirovsmile@gmail.com"><span data-i18n="common.email">Email</span><strong>tihomirovsmile@gmail.com</strong></a>
+</article>
+</div>
+</section>
+<section class="section section--cta">
+<div class="shell cta-card">
+<div>
+<span class="kicker" data-i18n="cta.kicker">Ready to inspect it?</span>
+<h2 data-i18n="cta.title">The code is the most honest product tour.</h2>
+</div>
+<div class="cta-card__actions">
+<a class="button button--light" data-i18n="cta.github" href="https://github.com/chillosprod/chillos-python-core" rel="noopener noreferrer" target="_blank">Open the repository</a>
+<a class="button button--ghost" data-i18n="cta.developers" href="developers.html">Developer guide</a>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="shell site-footer__grid">
+<div>
+<a class="brand brand--footer notranslate" href="#top"><span class="brand__mark"><small>CHILL</small><strong>OS</strong></span><span class="brand__name">ChillOS</span></a>
+<p data-i18n="footer.description">An experimental virtual operating environment built in Python and based in Kyiv, Ukraine.</p>
+<p class="font-note"><span data-i18n="footer.font">The official default interface font is Google Sans.</span> <a data-i18n="footer.fontLink" href="https://fonts.google.com/specimen/Google+Sans" rel="noopener noreferrer" target="_blank">View the font page</a>.</p>
+</div>
+<div class="footer-links">
+<strong data-i18n="footer.project">Project</strong>
+<a data-i18n="nav.features" href="#features">Features</a>
+<a data-i18n="nav.requirements" href="#requirements">Requirements</a>
+<a data-i18n="footer.github" href="https://github.com/chillosprod/chillos-python-core" rel="noopener noreferrer" target="_blank">GitHub</a>
+</div>
+<div class="footer-links">
+<strong data-i18n="footer.legal">Legal</strong>
+<a data-i18n="nav.terms" href="terms.html">Terms</a>
+<a data-i18n="nav.developers" href="developers.html">Developers</a>
+<a data-i18n="footer.dmca" href="dmca.html">DMCA</a>
+</div>
+<div class="footer-links">
+<strong data-i18n="footer.contact">Contact</strong>
+<a href="https://t.me/feelourlife" rel="noopener noreferrer" target="_blank">@feelourlife</a>
+<a href="mailto:tihomirovsmile@gmail.com">tihomirovsmile@gmail.com</a>
+</div>
+</div>
+<div class="shell site-footer__bottom">
+<span data-i18n="footer.copyright">© 2026 ChillOS Development Team</span>
+<span data-i18n="footer.location">Kyiv, Ukraine</span>
+<span class="geo-status" data-i18n="footer.geoPending" id="geoStatus">Regional mode: detecting…</span>
+<button aria-label="Hidden Kazakhstan flag" class="kz-secret-flag" data-i18n-aria-label="common.hiddenKzFlag" hidden="" id="kzSecretFlag" type="button">
+<span class="kz-secret-flag__sun"></span>
+<span aria-hidden="true" class="kz-secret-flag__eyes"><i></i><i></i></span>
+</button>
+</div>
+<div aria-label="Hidden embroidered handkerchief" class="kz-kerchief" data-i18n-aria-label="common.hiddenKerchief" hidden="" id="kzKerchief">
+<div class="kz-kerchief__cloth"><span data-i18n="kz.dragHint">Pull the edge</span></div>
+<button aria-label="Drag the handkerchief edge" class="kz-kerchief__edge" data-i18n-aria-label="common.dragKerchief" type="button"></button>
+<div class="kz-kerchief__letter">Спасибо вам, казахи, за поддержку родины проекта — Украины!</div>
+</div>
+</footer>
+<div aria-hidden="true" class="celebration" hidden="" id="kzFlagCelebration">
+<div class="celebration__flag celebration__flag--kz"><span></span></div>
+<p>Жақсылық жасап, Украинаға қолдау көрсетіп жүрген қазақстандықтарға рақмет!</p>
+</div>
+<div aria-hidden="true" class="celebration celebration--unity" hidden="" id="kzUnityCelebration">
+<div class="unity-message">Спасибо вам, казахи, за поддержку родины проекта — Украины!</div>
+<div aria-hidden="true" class="unity-flags"><span class="unity-flag unity-flag--kz"></span><svg viewbox="0 0 64 48"><path d="M11 22 22 12l9 7 7-5 15 12-8 12-8-5-6 7-8-9-5 4-7-13Z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4"></path><path d="m21 14 8 8 8-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="4"></path></svg><span class="unity-flag unity-flag--ua"></span></div>
+</div>
+<div aria-labelledby="belarusLanguageTitle" aria-modal="true" class="language-choice-modal" hidden="" id="belarusLanguageModal" role="dialog">
+<div class="language-choice-modal__card">
+<span aria-hidden="true" class="language-flag flag--be language-choice-modal__flag"></span>
+<h2 data-i18n="lang.modal.title" id="belarusLanguageTitle">Choose your language</h2>
+<p data-i18n="lang.modal.text">For visitors from Belarus, ChillOS does not choose a language automatically. Select the option that is safest and most comfortable for you.</p>
+<div class="language-choice-modal__options">
+<button data-locale="en" type="button"><span class="language-flag flag--en"></span>English</button>
+<button data-locale="be" type="button"><span class="language-flag flag--be"></span>Беларуская</button>
+<button data-locale="ru" type="button"><span class="language-flag flag--ru"></span>Русский</button>
+<button data-locale="uk" type="button"><span class="language-flag flag--uk"></span>Українська</button>
+<button data-locale="kk" type="button"><span class="language-flag flag--kk"></span>Қазақша</button>
+</div>
+</div>
+</div>
+<script defer="True" src="assets/js/site.js"></script></body>
+</html>
