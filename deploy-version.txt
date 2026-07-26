@@ -1,0 +1,3 @@
+ChillOS Website v6
+Deployment marker: v6-corporate-email-2026-07-27
+Contact: chillos@tihsmile.space

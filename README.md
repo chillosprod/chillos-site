@@ -74,3 +74,9 @@ The live ChillOS interface simulation is now placed below the hero text on every
 ### Flag display
 
 Language selectors use the official national flags for English (United States), Ukrainian, Russian, Belarusian and Kazakh. The Ukrainian regional presentation remains unchanged. No opposition or alternative political flags are used.
+
+## Deployment verification (v6)
+
+After uploading to GitHub Pages, open `deploy-version.txt` from the published site. It must show `v6-corporate-email-2026-07-27` and `chillos@tihsmile.space`.
+
+The main CSS and JavaScript files were renamed to `site-v6.css` and `site-v6.js` to prevent browsers and intermediary caches from reusing the previous assets.
